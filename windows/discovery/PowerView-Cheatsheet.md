@@ -7,3 +7,7 @@ Get-DomainUser -LDAPFilter "(userAccountControl:1.2.840.113556.1.4.803:=524288)"
 ```powershell
 Get-DomainComputer -Unconstrained | select dnshostname,useraccountcontol
 ```
+## check for Computers with Constrained Delegation
+```powershell
+Get-DomainComputer -TrustedToAuth | select dnshostname,msds-allowedtodelegateto
+```
